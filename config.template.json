@@ -1,0 +1,26 @@
+{
+  "agents": {
+    "defaults": {
+      "model": {
+        "primary": "openrouter/anthropic/claude-haiku-4.5",
+        "fallbacks": [
+          "openrouter/anthropic/claude-sonnet-4-5",
+          "openrouter/meta-llama/llama-3.3-70b-instruct:free"
+        ]
+      },
+      "contextTokens": 50000
+    }
+  },
+  "channels": {
+    "telegram": {
+      "enabled": true,
+      "dmPolicy": "open",
+      "allowFrom": ["*"],
+      "groupPolicy": "open",
+      "streaming": "partial"
+    }
+  },
+  "session": {
+    "dmScope": "per-channel-peer"
+  }
+}

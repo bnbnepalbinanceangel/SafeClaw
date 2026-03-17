@@ -1,0 +1,9 @@
+.env
+workspace/users/
+*.jsonl
+*.log
+node_modules/
+.secrets.baseline
+__pycache__/
+config/openclaw.json
+config.json
